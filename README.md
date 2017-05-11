@@ -48,9 +48,14 @@ Podemos modificar estos valores por defectos como por ejemplo si quisieramos cam
 ```javascript
 $(function(){
   $('.social-share').sofyShare({
-    networData: 'my-custom-name'
+    networData: 'social-network'
   });
 });
 ```
 
+para que luego podamos utilizarlo con el siguiente marcado:
 
+```html
+<a href="#" class="btn-primary social-share" data-social-network="facebook" data-url="http://www.example.com">Facebook</a>
+<a href="#" class="btn-primary social-share" data-social-network="twitter" data-url="http://www.example.com">Twitter</a>
+```
