@@ -9,11 +9,9 @@
         linkedin: 'https://www.linkedin.com/shareArticle?mini=true&url='
     };
 
-    var Sofy = function ( options ) {
+    var Sofy = function ( options, el ) {
 
-        //default values
         var defaults = {
-            element: '.sofy-share',
             facebookUrl: shareLinks.facebook,
             twitterUrl: shareLinks.twitter,
             googleUrl: shareLinks.google,
@@ -25,8 +23,6 @@
         };
 
         var settings = $.extend({}, defaults, options);
-
-        var el = $( settings.element );
 
         if ( el.length > 0 ) {
 
@@ -46,7 +42,7 @@
                 } else if ( socialNetwork == 'linkedin' ) {
                     $( this ).attr( 'href', settings.linkedinUrl + shareUrl );
                 } else {
-                    console.log('No se encuentra la red social deseada o todavia no le damos soporte');
+                    console.log('Dont support the current social network :(');
                 }
 
                 var linkRef = $( this ).attr( 'href' );
@@ -56,8 +52,6 @@
 
             });
         }
-
-        console.log(el);
 
     };
 

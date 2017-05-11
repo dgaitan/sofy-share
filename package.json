@@ -1,0 +1,36 @@
+{
+  "name": "sofy-share",
+  "version": "1.0.0",
+  "description": "Simple social share library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp copy-jquery"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgaitan/sofy-share.git"
+  },
+  "keywords": [
+    "social",
+    "jquery",
+    "social-share"
+  ],
+  "author": "David Gaitan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgaitan/sofy-share/issues"
+  },
+  "homepage": "https://github.com/dgaitan/sofy-share#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^2.1.2"
+  }
+}
